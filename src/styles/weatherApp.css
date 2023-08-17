@@ -1,0 +1,91 @@
+.weather-container {
+    background: linear-gradient(120deg, rgb(79, 207, 246), rgb(14, 128, 162), rgb(55, 4, 80));
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.weather-container form {
+    height: 3.2rem;
+    width: 95%;
+    max-width: 35rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.weather-container form input {
+    height: inherit;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    flex-grow: 1;
+    padding: .5rem;
+    box-shadow: 0 0 1rem .1rem #203d46e7;
+}
+.weather-container form button {
+    height: inherit;
+    display: block;
+    flex-shrink: 0;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 1rem .1rem #203d46e7;
+    transition: background-color .3s ease;
+}
+.weather-container form button:hover {
+    background-color: rgb(214, 199, 60);
+}
+.info-weather {
+    width: 95%;
+    max-width: 35rem;
+    color: #ffffff;
+}
+.info-weather .spinner {
+    display: block;
+    width: 100%;
+    height: 15rem;
+}
+.info-weather img {
+    margin: 0;
+    padding: 0;
+}
+.info-weather h3 {
+    font-size: 3.5rem;
+}
+.info-weather .time-data {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+@media (min-width: 480px){
+    .info-weather .time-data {
+        flex-direction: row;
+    }
+}
+.info-weather .humidity,
+.info-weather .wind {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.info-weather .time-data i {
+    font-size: 3rem;
+    color: rgb(214, 199, 60);    
+    filter: drop-shadow(0 0 1rem #d0dbdfe7);
+}
+.info-weather .time-data span {
+    font-weight: bold;
+    text-shadow: 0 0 1rem rgb(214, 199, 60);
+}
